@@ -35,7 +35,7 @@ cd env/Scripts
 ```
 
 ```
-actiavte
+activate
 ```
 
 Install required all libraries from requirements.txt
