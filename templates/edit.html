@@ -1,0 +1,43 @@
+
+{% include "home.html" %}
+
+
+  <div class="container">
+  
+    <h3>Edit your Post</h3>
+  
+    
+      <form action="{{url_for('edit',id=update.id)}}" method="POST" >
+        
+        
+        <div class="form-group">
+          <label >Company_name</label>
+          <input type="text" class="form-control" name="company_name" value={{ update.company_name }} >
+        </div>
+
+  <br>
+        <div class="form-group">
+          <label for="" >E-mail</label>
+          <input type="email" class="form-control" name="email" value= {{ update.email }}>
+        </div>
+      <br>
+  
+        <div class="form-group">
+          <label for="" >Phone_number</label>
+          <input type="number" class="form-control" name="phone_number" value= {{ update.phone_number}}>
+        </div><br>
+        <div class="form-group">
+          <label for="" >Address</label>
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="5"
+            name="address"
+          >{{ update.address }}</textarea>
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+  </div>
+  
+  
